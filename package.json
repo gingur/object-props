@@ -1,0 +1,30 @@
+{
+  "name": "object-props",
+  "version": "1.0.0",
+  "description": "Recursive approach to getOwnPropertyNames and getOwnPropertySymbols",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "coverage": "npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gingur/object-props.git"
+  },
+  "keywords": [
+    "getOwnPropertyNames",
+    "getOwnPropertySymbols"
+  ],
+  "author": "gingur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gingur/object-props/issues"
+  },
+  "homepage": "https://github.com/gingur/object-props#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.16",
+    "mocha": "^3.2.0",
+    "nyc": "^10.1.2"
+  }
+}
